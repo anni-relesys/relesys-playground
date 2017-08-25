@@ -1,0 +1,14 @@
+jobs:
+- name: windows-build
+  plan:
+  - get: relesys
+    trigger: true
+  - task: windows-build
+    file: relesys/CBuild/build.yml
+
+resources: 
+- name: relesys
+  type: git
+  source:
+    uri: https://github.com/anni-relesys/relesys-playground
+    branch: master

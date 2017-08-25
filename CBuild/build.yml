@@ -1,0 +1,12 @@
+---
+platform: windows
+
+inputs: 
+  - name: relesys
+
+run:
+
+  path: powershell.exe 
+  args:
+  - -File
+  - '.\relesys\windows.ps1'
