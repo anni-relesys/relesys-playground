@@ -9,4 +9,4 @@ run:
   path: powershell.exe 
   args:
   - -File
-  - '.\relesys\windows.ps1'
+  - '.\relesys\CBuild\windows.ps1'
